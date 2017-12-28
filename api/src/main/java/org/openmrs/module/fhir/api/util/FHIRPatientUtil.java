@@ -339,7 +339,7 @@ public class FHIRPatientUtil {
 		return patientReference;
 	}
 
-	private static String extractUuid(String uuid) {
+	public static String extractUuid(String uuid) {
 		return uuid.contains("/") ? uuid.substring(uuid.indexOf("/") + 1) : uuid;
 	}
 }
